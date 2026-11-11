@@ -2,6 +2,7 @@ from pico2d import *
 import game_world
 import game_framework
 from boy import Boy
+from bird import Bird
 from grass import Grass
 
 boy = None
