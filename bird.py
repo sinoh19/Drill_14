@@ -51,7 +51,8 @@ class Bird:
         self.direction = 1
 
     def update(self):
-        pass
+        frame_time = game_framework.frame_time
+        self.frame = (self.frame + FRAMES_PER_SECOND * frame_time) % FRAME_COUNT
 
     def draw(self):
         pass
