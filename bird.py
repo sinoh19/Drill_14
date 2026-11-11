@@ -44,7 +44,8 @@ class Bird:
     image = None
 
     def __init__(self, x, y, frame=0):
-        pass
+        if Bird.image is None:
+            Bird.image = load_image('bird_animation.png')
 
     def update(self):
         pass
