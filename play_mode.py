@@ -28,6 +28,12 @@ def init():
     boy = Boy()
     game_world.add_oject(boy)
 
+    for i in range(10):
+        x = 150 + i * 140
+        y = 430 + (i % 3) * 40
+        frame = (i * 3) % 14
+        game_world.add_oject(Bird(x, y, frame))
+
     grass = Grass()
     game_world.add_oject(grass, 0)
 
@@ -53,8 +59,6 @@ def render():
     clear_canvas()
     game_world.render()
     update_canvas()
-
-
 
 
 
