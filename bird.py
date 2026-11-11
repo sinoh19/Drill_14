@@ -38,3 +38,16 @@ FRAME_HEIGHT = 168
 
 DRAW_WIDTH = 110
 DRAW_HEIGHT = 100
+
+
+class Bird:
+    image = None
+
+    def __init__(self, x, y, frame=0):
+        pass
+
+    def update(self):
+        pass
+
+    def draw(self):
+        pass
