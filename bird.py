@@ -48,6 +48,7 @@ class Bird:
             Bird.image = load_image('bird_animation.png')
         self.x, self.y = x, y
         self.frame = frame % FRAME_COUNT
+        self.direction = 1
 
     def update(self):
         pass
